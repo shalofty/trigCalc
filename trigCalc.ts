@@ -87,7 +87,7 @@ while (uiPrompt < 1) {
     else if (selection == '1') {
         console.log('\nSelection a conversion:\n' +
             '1) Degrees to Radians\n' +
-            '2) Radians to Degrees\n')
+            '2) Radians to Degrees\n');
         let conversionSelect = ui(">>>").toString();
         if (conversionSelect == '1') {
             let degreesInput = ui("Enter Degrees >>>");
@@ -97,6 +97,22 @@ while (uiPrompt < 1) {
         else if (conversionSelect == '2') {
             let radians:Radians = ui("Enter Radians >>>");
             console.log("Degrees: " + radiansToDegrees(radians));
+        }
+    }
+    // Right Angle Functions
+    else if (selection == '2') {
+        console.log("\nSelect a function:\n" +
+            "1) Sine\n" +
+            "2) Cosine\n" +
+            "3) Tangent\n" +
+            "4) Cotangent\n" +
+            "5) Secant\n" +
+            "6) Cosecant\n");
+        let raSelect = ui(">>>").toString();
+        if (raSelect == '1') {
+            let legA = +ui("legA length >>>\n");
+            let legB = +ui("legB length >>>\n");
+            console.log(sine(legA, legB));
         }
     }
 }
