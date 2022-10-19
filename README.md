@@ -12,4 +12,5 @@ Trigonometric Conversions:
   Radians to Degrees
   
 Arc Length and Circle Sector Functions
+
 Right Angle Trig Functions
